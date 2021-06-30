@@ -1,4 +1,4 @@
-package com.example.redvings.pushupcounter;
+package com.pushupcounter;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -22,20 +22,12 @@ public class SettingsActivity extends Activity {
 		sharedpreferences =getSharedPreferences("Mypref", Context.MODE_PRIVATE);
 		try {
 			if (sharedpreferences.contains("counter")) {
-				if (sharedpreferences.getBoolean("counter", true)) {
-					vibrate_chkbx.setChecked(true);
-				} else {
-					vibrate_chkbx.setChecked(false);
-				}
+				vibrate_chkbx.setChecked(sharedpreferences.getBoolean("counter", true));
 			} else {
 				vibrate_chkbx.setChecked(true);
 			}
 			if (sharedpreferences.contains("sound")) {
-				if (sharedpreferences.getBoolean("sound", true)) {
-					sound_chkbx.setChecked(true);
-				} else {
-					sound_chkbx.setChecked(false);
-				}
+				sound_chkbx.setChecked(sharedpreferences.getBoolean("sound", true));
 			} else {
 				sound_chkbx.setChecked(true);
 			}

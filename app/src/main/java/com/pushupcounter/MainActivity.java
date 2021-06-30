@@ -1,4 +1,4 @@
-package com.example.redvings.pushupcounter;
+package com.pushupcounter;
 
 import android.annotation.SuppressLint;
 import android.media.AudioAttributes;
@@ -52,10 +52,10 @@ public class MainActivity extends Activity {
 
 		SensorManager sensorManager;
 		AudioManager audioManager;
-		counter_tv = findViewById(R.id.counter_tv);
-		sound_tgl=findViewById(R.id.sound_tgl);
-		counter_released=findViewById(R.id.counter_released);   //imageView
-		RelativeLayout relativeLayout = findViewById(R.id.relative_layout);
+		counter_tv = findViewById(R.id.tv_main_pushUpCount);
+		sound_tgl=findViewById(R.id.tgl_main_sound);
+		counter_released=findViewById(R.id.img_main_countReleased);   //imageView
+		RelativeLayout relativeLayout = findViewById(R.id.rl_main_parent);
 
 
 		audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);

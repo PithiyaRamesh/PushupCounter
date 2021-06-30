@@ -1,4 +1,4 @@
-package com.example.redvings.pushupcounter;
+package com.pushupcounter;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,10 +65,10 @@ public class ReverseCountActivity extends AppCompatActivity {
         SensorManager sensor_manager;
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
-        Counter_released_goal_image=findViewById(R.id.counter_released_goal_img);
-        finish_goal_button=findViewById(R.id.finish_goal_button);
-        counter_tv_1=findViewById(R.id.counter_tv_1);
-        sound_tgl_1 = findViewById(R.id.sound_tgl_1);
+        Counter_released_goal_image=findViewById(R.id.img_reverse_countReleased);
+        finish_goal_button=findViewById(R.id.btn_reverse_finish);
+        counter_tv_1=findViewById(R.id.tv_reverse_pushUpCount);
+        sound_tgl_1 = findViewById(R.id.tgl_reverse_sound);
 
         get_goal_dialog(con);
 
@@ -270,7 +270,7 @@ public class ReverseCountActivity extends AppCompatActivity {
             pushup_controller=false;
             AlertDialog.Builder adb = new AlertDialog.Builder(this.con);
             ViewGroup vg = findViewById(android.R.id.content);
-            View dv = LayoutInflater.from(this.con).inflate(R.layout.dialog_reversecount_onresult, vg, false);
+            View dv = LayoutInflater.from(this.con).inflate(R.layout.dialog_onresult, vg, false);
             if (goal == 0) {
                 Button continue_btn;
                 continue_btn = dv.findViewById(R.id.continue_button);
@@ -288,7 +288,7 @@ public class ReverseCountActivity extends AppCompatActivity {
             TextView push_done_tv = dv.findViewById(R.id.pushups_done_tv);
             TextView total_pushups_tv=dv.findViewById(R.id.total_pushups_tv);
             int done = users_entered_goal - goal;
-            total_pushups += users_entered_goal -goal;
+            total_pushups += users_entered_goal - goal;
             String total_pushups_str=getString(R.string.total_pushups);
             total_pushups_tv.setText(total_pushups_str+total_pushups);
             String pushups_done=getString(R.string.dialog_result_pushups_done);
@@ -315,9 +315,9 @@ public class ReverseCountActivity extends AppCompatActivity {
     {
         AlertDialog.Builder adb2 = new AlertDialog.Builder(con2);
         ViewGroup vg = findViewById(android.R.id.content);
-        View dv = LayoutInflater.from(con2).inflate(R.layout.dialog_reversecount_setgoal, vg, false);
-        final EditText get_goal_edt =dv.findViewById(R.id.getCount_edt);
-        Button set_goal_button =dv.findViewById(R.id.set_goal_button);
+        View dv = LayoutInflater.from(con2).inflate(R.layout.dialog_setgoal, vg, false);
+        final EditText get_goal_edt =dv.findViewById(R.id.edt_dialog_setGoal);
+        Button set_goal_button =dv.findViewById(R.id.btn_dialog_setGoal);
         adb2.setView(dv);
         ad2 = adb2.create();
         ad2.setCancelable(false);

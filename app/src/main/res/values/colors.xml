@@ -7,4 +7,6 @@
     <color name="colorDark">#2D2F31</color>
     <color name="cloudBurst">#353D4A</color>
     <color name="red">#D32F2F</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="buttonColor">#FFB300</color>
 </resources>

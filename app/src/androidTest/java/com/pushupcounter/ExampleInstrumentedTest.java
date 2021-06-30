@@ -1,4 +1,4 @@
-package com.example.redvings.pushupcounter;
+package com.pushupcounter;
 
 import android.content.Context;
 

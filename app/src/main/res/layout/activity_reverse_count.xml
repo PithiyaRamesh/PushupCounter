@@ -17,7 +17,7 @@
         android:contentDescription="TODO" />
 
     <ImageView
-        android:id="@+id/counter_released_goal_img"
+        android:id="@+id/img_reverse_countReleased"
         android:layout_width="@dimen/_175sdp"
         android:layout_height="@dimen/_175sdp"
         android:layout_centerVertical="true"
@@ -26,28 +26,31 @@
         android:contentDescription="TODO" />
 
     <Button
-        android:id="@+id/finish_goal_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_reverse_finish"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_25sdp"
+        android:textSize="@dimen/_20ssp"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:text="@string/finish_goal_button"
         android:onClick="finish_Goal"
         android:background="@drawable/button_round"
         android:layout_centerHorizontal="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@android:style/Widget.Material.Button"
+        />
 
     <TextView
-        android:id="@+id/counter_tv_1"
+        android:id="@+id/tv_reverse_pushUpCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:textSize="@dimen/_60ssp"
         android:text="@string/push_up_counter" />
 
     <ToggleButton
-        android:id="@+id/sound_tgl_1"
+        android:id="@+id/tgl_reverse_sound"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/unmute"

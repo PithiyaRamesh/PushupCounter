@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relative_layout"
+    android:id="@+id/rl_main_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,11 +10,11 @@
 
 
     <ToggleButton
-        android:id="@+id/sound_tgl"
+        android:id="@+id/tgl_main_sound"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
         android:background="@drawable/mute"
         android:textOff=""
         android:textOn="" />
@@ -23,29 +23,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:background="@drawable/button_round"
         android:onClick="Reset_btn"
         android:text="@string/Complete"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/_35ssp" />
+        android:textColor="#101010"
+        android:textSize="@dimen/_20ssp"
+        android:textAppearance="@android:style/Widget.Material.Button"
+        />
 
     <ImageView
         android:layout_width="@dimen/_175sdp"
         android:layout_height="@dimen/_175sdp"
         android:layout_centerInParent="true"
         android:src="@drawable/counter_pressed"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/description_background_image_count" />
 
     <ImageView
-        android:id="@+id/counter_released"
+        android:id="@+id/img_main_countReleased"
         android:layout_width="@dimen/_175sdp"
         android:layout_height="@dimen/_175sdp"
         android:layout_centerInParent="true"
-        android:src="@drawable/counter_released" />
+        android:src="@drawable/counter_released"
+        android:contentDescription="@string/description_background_image_count"
+        />
 
     <TextView
-        android:id="@+id/counter_tv"
+        android:id="@+id/tv_main_pushUpCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

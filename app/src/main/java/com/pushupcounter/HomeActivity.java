@@ -1,4 +1,4 @@
-package com.example.redvings.pushupcounter;
+package com.pushupcounter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;

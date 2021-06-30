@@ -19,4 +19,5 @@
     <string name="free_training">Start</string>
     <string name="home">Home</string>
     <string name="settings">settings</string>
+    <string name="description_background_image_count">Background Image Of Count</string>
 </resources>
