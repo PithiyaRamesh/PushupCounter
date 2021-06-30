@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloudBurst"
+    android:gravity="bottom"
+    android:padding="35dp"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/Free_training_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round"
+        android:onClick="start"
+        android:text="@string/free_training"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/set_goal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Free_training_btn"
+        android:layout_alignEnd="@id/Free_training_btn"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/button_round"
+        android:onClick="goal"
+        android:text="@string/set_goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>

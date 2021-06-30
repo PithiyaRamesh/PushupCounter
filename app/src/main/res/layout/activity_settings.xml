@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006064"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chkbx_mysettings_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Vibrate_alert"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <CheckBox
+            android:id="@+id/chkbx_mysettings_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/Sound_alert"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20ssp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_20ssp"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:background="@android:color/holo_blue_light"
+        android:minEms="8"
+        android:onClick="Save"
+        android:text="@string/Save" />
+
+</RelativeLayout>

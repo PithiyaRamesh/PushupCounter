@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Pushup Counter</string>
+    <string name="dialog_result_task_completed">Task Completed!</string>
+    <string name="set_goal_button">Set</string>
+    <string name="set_goal_edittext_hint">Enter your goal</string>
+    <string name="finish_goal_button">Finish</string>
+    <string name="hardware_not_found">Required Hardware Not Found On Your Device</string>
+    <string name="push_up_counter">0</string>
+    <string name="Complete">Reset</string>
+    <string name="Vibrate_alert">Vibrate alert</string>
+    <string name="Sound_alert">Sound alert</string>
+    <string name="Save">Save</string>
+    <string name="dialog_result_pushups_left">Pushups Left:-</string>
+    <string name="dialog_result_pushups_done">Pushups Done:-</string>
+    <string name="continue_pushups_button">Continue</string>
+    <string name="set_goal_textview">Set your goal</string>
+    <string name="total_pushups">Total pushups:-</string>
+    <string name="set_goal">Set Goal</string>
+    <string name="free_training">Start</string>
+    <string name="home">Home</string>
+    <string name="settings">settings</string>
+</resources>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloudBurst"
+    android:clickable="true"
+    tools:context=".MainActivity"
+    android:focusable="true">
+
+
+    <ToggleButton
+        android:id="@+id/sound_tgl"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/mute"
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/button_round"
+        android:onClick="Reset_btn"
+        android:text="@string/Complete"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_35ssp" />
+
+    <ImageView
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_175sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/counter_pressed"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/counter_released"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_175sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/counter_released" />
+
+    <TextView
+        android:id="@+id/counter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layerType="none"
+        android:layoutDirection="locale"
+        android:text="@string/push_up_counter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#4A148C"
+        android:textSize="@dimen/_60ssp"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
