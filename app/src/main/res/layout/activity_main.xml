@@ -28,7 +28,8 @@
         android:onClick="Reset_btn"
         android:text="@string/Complete"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/_35ssp" />
+        android:textSize="@dimen/_25ssp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
     <ImageView
         android:layout_width="@dimen/_175sdp"

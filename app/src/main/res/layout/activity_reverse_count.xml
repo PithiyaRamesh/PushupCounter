@@ -27,10 +27,12 @@
 
     <Button
         android:id="@+id/finish_goal_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_25sdp"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_35sdp"
         android:text="@string/finish_goal_button"
         android:onClick="finish_Goal"
         android:background="@drawable/button_round"

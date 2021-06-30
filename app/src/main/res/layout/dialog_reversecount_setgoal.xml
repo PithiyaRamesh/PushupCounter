@@ -3,8 +3,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:background="@drawable/dialog_round">
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/background_dialog_reversecount">
 
         <TextView
             android:id="@+id/textView"
@@ -15,27 +15,19 @@
             android:textSize="@dimen/_20sdp"
             android:textColor="@android:color/black" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout_set_goal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:background="@drawable/edittext_round"
-            >
 
             <EditText
                 android:id="@+id/getCount_edt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/edittext_round"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:hint="@string/set_goal_edittext_hint"
+                android:padding="@dimen/_8sdp"
                 android:inputType="number"
                 android:importantForAutofill="no">
             <requestFocus/>
             </EditText>
-        </LinearLayout>
 
         <Button
             android:id="@+id/set_goal_button"
